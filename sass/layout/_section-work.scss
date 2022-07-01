@@ -11,10 +11,9 @@
 
 .work-list .item {
   position: relative;
-}
-
-.work-list .item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-list .work-type {

@@ -24,15 +24,13 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-  color: var(--button-text-color);
-  background-color: var(--button-bg-hover-color);
-}
-
-.subscribe-button-icon {
-  margin-left: 10px;
-  fill: var(--button-text-color);
+  &:hover,
+  &:focus {
+    color: var(--button-text-color);
+    background-color: var(--button-bg-hover-color);
+  }
+  &-icon {
+    margin-left: 10px;
+    fill: var(--button-text-color);
+  }
 }

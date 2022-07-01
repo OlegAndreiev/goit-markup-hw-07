@@ -5,34 +5,31 @@
 
 .site-nav-list {
   display: flex;
-}
 
-.site-nav-list .item:not(:last-child) {
-  margin-right: 50px;
-}
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-.site-nav-list .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    color: var(--title-text-color);
 
-  color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav-list .link:hover,
-.site-nav-list .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav-list .link.current {
-  color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link:hover,
+  .link:focus {
+    color: var(--accent-color);
+  }
+  .link.current {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav-list .item {

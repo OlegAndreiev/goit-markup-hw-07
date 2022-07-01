@@ -7,13 +7,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.projects-filter .button-filter {
-  padding: 6px 22px;
-  border-radius: 4px;
-}
-
-.projects-filter .item:not(:last-child) {
-  margin-right: 8px;
+  .button-filter {
+    padding: 6px 22px;
+    border-radius: 4px;
+  }
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
 }

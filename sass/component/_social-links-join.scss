@@ -15,16 +15,15 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+  }
 }
 
 .social-icon-join {
   fill: currentColor;
-}
-
-.social-link-join:hover,
-.social-link-join:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
 }
 
 .social-title {
