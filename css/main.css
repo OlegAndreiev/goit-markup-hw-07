@@ -163,7 +163,6 @@ body {
   padding: 30px 32px;
   text-align: center;
 }
-
 .card-item .title {
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -172,7 +171,6 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-
 .card-item .job-title {
   margin-bottom: 16px;
   font-size: 16px;
@@ -189,8 +187,8 @@ body {
   width: 44px;
   height: 44px;
 }
-
-.social-item:not(:last-child),
+.social-item:not(:last-child), .social-item:not(:last-child),
+.social-item-join:not(:last-child),
 .social-item-join:not(:last-child) {
   margin-right: 10px;
 }
@@ -427,15 +425,14 @@ body {
 .work-address {
   color: var(--button-text-color);
 }
+.work-address:hover, .work-address:focus {
+  color: var(--accent-color);
+}
 
 .contacts {
   color: var(--contacts-text-color);
 }
-
-.work-address:hover,
-.contacts:hover,
-.work-address:focus,
-.contacts:focus {
+.contacts:hover, .contacts:focus {
   color: var(--accent-color);
 }
 
