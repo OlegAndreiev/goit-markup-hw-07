@@ -1,0 +1,19 @@
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.projects-filter .button-filter {
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.projects-filter .item:not(:last-child) {
+  margin-right: 8px;
+}

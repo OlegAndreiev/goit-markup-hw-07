@@ -1,31 +1,4 @@
-// MAIN PAGE
-@import './utils/vars';
-@import './base/reset';
-@import './base/common';
-@import './utils/hidden';
-@import './layout/header';
-@import './layout/footer';
-@import './layout/site-nav';
-@import './layout/auth-nav';
-@import './layout/section-hero';
-@import './layout/section-features';
-@import './layout/section-work';
-@import './layout/section-team';
-@import './layout/section-clients';
-@import './layout/subscribe';
-@import './layout/backdrop';
-@import './layout/modal';
-@import './component/container';
-@import './component/button-hero';
-@import './component/logo-header';
-@import './component/logo-footer';
-@import './component/pre-logo';
-@import './component/section-title';
-@import './component/team-card';
-@import './component/social-links';
-@import './component/social-links-join';
-@import './component/button-subscribe';
-@import './component/button-close';
-@import './component/button-modal';
-
-// PORTFOLIO PAGE
+@import './utils/index';
+@import './base/index';
+@import './component/index';
+@import './layout/index';
