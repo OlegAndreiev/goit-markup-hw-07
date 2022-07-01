@@ -13,12 +13,11 @@
 }
 
 .client-link {
-  display: flex;
   width: 170px;
   height: 92px;
+  @extend %align-items;
+
   outline: transparent;
-  align-items: center;
-  justify-content: center;
   color: rgba(175, 177, 184, 1);
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;

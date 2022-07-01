@@ -8,19 +8,13 @@
   display: flex;
   .title {
     color: var(--title-text-color);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
-    letter-spacing: 0.03em;
 
     margin-bottom: 10px;
   }
   .text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71, 0.03em);
   }
   .item {
     width: 270px;
@@ -31,10 +25,9 @@
 }
 
 .item-icon {
-  display: flex;
+  @extend %align-items;
   height: 120px;
-  align-items: center;
-  justify-content: center;
+
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
 

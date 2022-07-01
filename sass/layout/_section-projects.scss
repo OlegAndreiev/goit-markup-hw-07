@@ -4,8 +4,7 @@
 }
 
 .projects-filter {
-  display: flex;
-  justify-content: center;
+  @extend %align-items;
   margin-bottom: 50px;
   .button-filter {
     padding: 6px 22px;

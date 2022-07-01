@@ -19,6 +19,12 @@
   --card-border-color: rgba(238, 238, 238, 1);
 }
 
+.projects-filter, .privacy-text span, .privacy-text, .client-link, .work-list .work-type, .item-icon, .main-header, .button-modal, .button-close, .subscribe-button, .social-link-join, .social-link, .button-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Для скрытия */
 .visually-hidden {
   position: absolute;
@@ -108,10 +114,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   border-style: none;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,13 +154,13 @@ body {
 
 /* Section */
 .section-title {
-  color: var(--title-text-color);
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  text-align: center;
+  color: var(--title-text-color);
 }
 
 .card-item {
@@ -194,9 +198,6 @@ body {
 }
 
 .social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -217,9 +218,6 @@ body {
 }
 
 .social-link-join {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -253,8 +251,6 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  display: flex;
-  align-items: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
@@ -279,13 +275,10 @@ body {
 
 .button-close {
   position: absolute;
-  display: flex;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  justify-content: center;
-  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -298,7 +291,6 @@ body {
 }
 
 .button-modal {
-  display: flex;
   min-width: 200px;
   height: 50px;
   padding: 10px 55px;
@@ -310,8 +302,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  align-items: center;
-  justify-content: center;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -331,8 +321,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   border-style: none;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -390,11 +380,6 @@ body {
   background-color: var(--header-bg-color);
   border-bottom: 1px solid rgb(236, 236, 236);
   width: 100%;
-}
-
-.main-header {
-  display: flex;
-  align-items: center;
 }
 
 /* Footer  */
@@ -550,8 +535,8 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -573,8 +558,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 .features-list .text {
@@ -590,10 +575,7 @@ body {
 }
 
 .item-icon {
-  display: flex;
   height: 120px;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(245, 244, 250);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -619,11 +601,8 @@ body {
 .work-list .work-type {
   position: absolute;
   bottom: 0;
-  display: flex;
   height: 70px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 }
 
@@ -631,8 +610,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -674,12 +653,9 @@ body {
 }
 
 .client-link {
-  display: flex;
   width: 170px;
   height: 92px;
   outline: transparent;
-  align-items: center;
-  justify-content: center;
   color: rgb(175, 177, 184);
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
@@ -787,8 +763,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -856,9 +832,6 @@ body {
 }
 
 .privacy-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -868,9 +841,6 @@ body {
   color: var(--accent-color);
 }
 .privacy-text span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -907,8 +877,6 @@ body {
 }
 
 .projects-filter {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
 }
 .projects-filter .button-filter {
