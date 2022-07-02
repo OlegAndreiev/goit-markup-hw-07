@@ -1,16 +1,17 @@
-.projects {
+.card-set {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.projects-filter {
+.card-set__filter {
   @extend %align-items;
   margin-bottom: 50px;
-  .button-filter {
+  .button__filter {
     padding: 6px 22px;
     border-radius: 4px;
   }
-  .item:not(:last-child) {
-    margin-right: 8px;
-  }
+}
+
+.card-set__item:not(:last-child) {
+  margin-right: 8px;
 }

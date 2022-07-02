@@ -4,3 +4,12 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin font2($ff, $fw, $fs, $lh, $ls, $c) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh / $fs;
+  letter-spacing: $ls;
+  color: $c;
+}
