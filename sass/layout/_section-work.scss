@@ -28,8 +28,7 @@
 }
 
 .work-type-text {
-  @include font(700, 14px, 1.14, 0.03em);
+  @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
 }

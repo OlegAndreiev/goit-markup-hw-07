@@ -5,10 +5,9 @@
 .team-card__title {
   margin-bottom: 10px;
 
-  color: var(--title-text-color);
-  @include font(500, 16px, 1.18, 0.03em);
+  @include font(null, 500, 16px, 1.18, 0.03em, var(--title-text-color));
 }
 .team-card__position {
   margin-bottom: 16px;
-  @include font(null, 16px, 1.18, 0.03em);
+  @include font(null, null, 16px, 1.18, 0.03em, null);
 }

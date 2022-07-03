@@ -12,13 +12,13 @@
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--primary-text-color);
+
   fill: var(--primary-text-color);
   align-items: center;
 
-  @include font(500, 14px, 1.14, 0.02em);
+  @include font(null, 500, 14px, 1.14, 0.02em, var(--primary-text-color));
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $effect, color $effect;
 
   &:hover,
   &:focus {

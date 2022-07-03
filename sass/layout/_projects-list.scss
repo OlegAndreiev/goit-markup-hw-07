@@ -15,15 +15,12 @@
 }
 
 .card-set__title {
-  color: var(--title-text-color);
-
-  @include font(700, 18px, 2, 0.06em);
+  @include font(null, 700, 18px, 2, 0.06em, var(--title-text-color));
 }
 
 .card-set__work {
   margin-bottom: 4px;
-  color: var(--primary-text-color);
-  @include font(null, 16px, 1.88, 0.03em);
+  @include font(null, null, 16px, 1.88, 0.03em, var(--primary-text-color));
 }
 
 .card-set__text {

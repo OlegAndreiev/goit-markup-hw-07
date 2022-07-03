@@ -2,9 +2,9 @@
   margin-left: 70px;
 }
 .social-links__title {
-  @include font(700, 14px, 1.14, 0.03em);
+  @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
   text-transform: uppercase;
-  color: #ffffff;
+
   margin: 0;
   margin-bottom: 20px;
 }
@@ -28,8 +28,7 @@
   height: 100%;
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $effect, color $effect;
 
   &:hover,
   &:focus {

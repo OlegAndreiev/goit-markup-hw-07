@@ -17,9 +17,7 @@
 }
 
 .hero-content__title {
-  color: var(--primary-bg-color);
-
-  @include font(900, 44px, 1.36, 0.06em);
+  @include font(null, 900, 44px, 1.36, 0.06em, var(--primary-bg-color));
   text-align: center;
   text-transform: uppercase;
 

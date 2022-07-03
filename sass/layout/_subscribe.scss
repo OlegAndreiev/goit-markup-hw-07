@@ -10,10 +10,8 @@
 .subscribe-title {
   margin-bottom: 20px;
 
-  @include font(700, 14px, 1.14, 0.03em);
+  @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
   text-transform: uppercase;
-
-  color: #ffffff;
 }
 
 .subscribe-input {
@@ -35,7 +33,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color $effect;
   &:focus {
     border-color: var(--accent-color);
   }
