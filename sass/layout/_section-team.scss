@@ -1,13 +1,14 @@
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--section-bg-color);
 }
 
-.team-list {
+.team-card {
   display: flex;
 }
 
-.team-list .card {
+.team-card__card {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -15,8 +16,4 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.team-bgc {
-  background-color: var(--section-bg-color);
 }

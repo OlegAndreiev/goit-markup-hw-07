@@ -19,7 +19,7 @@
   --card-border-color: rgba(238, 238, 238, 1);
 }
 
-.card-set__filter, .privacy-text span, .privacy-text, .client-link, .work-list .work-type, .item-icon, .main-header, .button-modal, .button-close, .subscribe-button, .social-link-join, .social-link, .hero-content__button {
+.card-set__filter, .privacy-text span, .privacy-text, .client-link, .work-list .work-type, .item-icon, .main-header, .button-modal, .button-close, .subscribe-button, .social-links__link, .hero-content__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,11 +167,12 @@ body {
   color: var(--title-text-color);
 }
 
-.card-item {
+.team-card__item {
   padding: 30px 32px;
   text-align: center;
 }
-.card-item .title {
+
+.team-card__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -179,65 +180,19 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-.card-item .job-title {
+
+.team-card__position {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
-.social-list {
-  display: flex;
-}
-
-.social-item,
-.social-item-join {
-  width: 44px;
-  height: 44px;
-}
-.social-item:not(:last-child),
-.social-item-join:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  color: rgb(175, 177, 184);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover, .social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
-}
-
-.social-icon {
-  fill: currentColor;
-}
-
-.join {
+.social__join {
   margin-left: 70px;
 }
 
-.social-link-join {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  color: var(--logo-footer-text-color);
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link-join:hover, .social-link-join:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
-}
-
-.social-icon-join {
-  fill: currentColor;
-}
-
-.social-title {
+.social-links__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -246,6 +201,43 @@ body {
   color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.social-links__list {
+  display: flex;
+}
+
+.social-links__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links__link:hover, .social-links__link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+.social-links__icon {
+  fill: currentColor;
+}
+
+.social-links__item--fill-light {
+  color: rgb(175, 177, 184);
+}
+
+.social-links__item--fill-dark {
+  color: var(--logo-footer-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .subscribe-button {
@@ -622,23 +614,20 @@ body {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--section-bg-color);
 }
 
-.team-list {
+.team-card {
   display: flex;
 }
 
-.team-list .card {
+.team-card__card {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list .card:not(:last-child) {
+.team-card__card:not(:last-child) {
   margin-right: 30px;
-}
-
-.team-bgc {
-  background-color: var(--section-bg-color);
 }
 
 /* Clients */
@@ -915,7 +904,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.card-set__text {
+.card-set__work {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-size: 16px;
@@ -923,7 +912,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.card-set-item {
+.card-set__text {
   padding: 20px 24px;
   border-bottom: 1px solid rgb(238, 238, 238);
   border-left: 1px solid rgb(238, 238, 238);
