@@ -28,7 +28,7 @@
   height: 100%;
   border-radius: 50%;
 
-  transition: background-color $effect, color $effect;
+  @include transition(background-color, color, null);
 
   &:hover,
   &:focus {

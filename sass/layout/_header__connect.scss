@@ -10,15 +10,14 @@
 
 .connect__link {
   display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include section(32px, 32px);
 
   fill: var(--primary-text-color);
   align-items: center;
 
   @include font(null, 500, 14px, 1.14, 0.02em, var(--primary-text-color));
 
-  transition: fill $effect, color $effect;
+  @include transition(fill, color, null);
 
   &:hover,
   &:focus {

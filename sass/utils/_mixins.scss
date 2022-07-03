@@ -7,3 +7,14 @@
   color: $c;
   // line-height: $lh / $fs;
 }
+
+@mixin section($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin transition($one, $two, $three, $td: 250ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $one, $two, $three;
+  transition-duration: $td;
+  transition-timing-function: $ttf;
+}

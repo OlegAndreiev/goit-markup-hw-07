@@ -2,8 +2,8 @@
 @import './header';
 @import './footer';
 @import './address-list';
-@import './site-nav';
-@import './auth-nav';
+@import './nav__site';
+@import './header__connect';
 @import './section-hero';
 @import './section-features';
 @import './section-work';
@@ -14,5 +14,4 @@
 @import './modal';
 
 // PORTFOLIO PAGE
-@import './section-projects';
-@import './projects-list';
+@import './card-set';

@@ -33,7 +33,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  transition: border-color $effect;
+  @include transition(border-color, null, null);
   &:focus {
     border-color: var(--accent-color);
   }

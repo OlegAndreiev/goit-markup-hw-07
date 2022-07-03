@@ -7,7 +7,7 @@
   font-style: normal;
   @include font(null, null, 14px, 1.71, 0.03em, null);
 
-  transition: color $effect;
+  @include transition(null, color, null);
 }
 
 .work-address {

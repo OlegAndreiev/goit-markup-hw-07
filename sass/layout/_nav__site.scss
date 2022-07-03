@@ -8,12 +8,11 @@
 
   .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @include section(32px, 32px);
 
     @include font(null, 500, 14px, 1.14, 0.02em, var(--title-text-color));
 
-    transition: color $effect;
+    @include transition(null, color, null);
   }
   .link:hover,
   .link:focus {
@@ -57,7 +56,7 @@
   border-radius: 2px;
 
   transform: scaleX(0);
-  transition: transform $effect;
+  @include transition(transform, null, null);
 }
 
 .menu .hover-line:hover::after {

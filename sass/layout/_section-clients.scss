@@ -1,7 +1,6 @@
 /* Clients */
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section(94px, 94px);
   background-color: var(--primary-bg-color);
 }
 
@@ -22,7 +21,8 @@
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 
-  transition: border $effect, color $effect;
+  @include transition(border, color, null);
+
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);

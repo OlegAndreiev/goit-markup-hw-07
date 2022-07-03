@@ -17,7 +17,7 @@
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform $effect;
+  @include transition(transform, null, null);
 }
 
 .modal-field {
@@ -58,7 +58,7 @@
   outline: transparent;
   fill: #212121;
 
-  transition: border $effect, fill $effect;
+  @include transition(border, fill, null);
   &:focus {
     border-color: var(--accent-color);
   }
@@ -77,7 +77,8 @@
   border-radius: 4px;
   outline: transparent;
 
-  transition: border $effect, color $effect;
+  @include transition(border, color, null);
+
   &:focus {
     border-color: var(--accent-color);
     color: black;
@@ -98,7 +99,7 @@
   transform: translateY(-50%);
   .modal-input:focus + & {
     fill: var(--accent-color);
-    transition: fill $effect;
+    @include transition(fill, null, null);
   }
 }
 
@@ -118,7 +119,7 @@
     border-radius: 2px;
     margin-right: 8.38px;
 
-    transition: border-color $effect;
+    @include transition(null, border-color, null);
   }
   & span:hover {
     border-color: var(--accent-color);

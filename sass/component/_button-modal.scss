@@ -13,8 +13,7 @@
   border-radius: 4px;
   cursor: pointer;
 
-  transition: color $effect, background-color $effect;
-
+  @include transition(background-color, color, null);
   &:hover {
     color: var(--button-text-color);
     background-color: var(--button-bg-hover-color);

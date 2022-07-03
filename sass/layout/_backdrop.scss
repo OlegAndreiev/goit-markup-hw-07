@@ -9,7 +9,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity $effect, visibility $effect;
+  @include transition(opacity, visibility, null);
   &.is-hidden {
     visibility: hidden;
     opacity: 0;

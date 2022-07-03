@@ -13,7 +13,7 @@
   padding: 0;
   background-color: #fff;
 
-  transition: fill $effect;
+  @include transition(fill, null, null);
   &:hover,
   &:focus {
     fill: var(--accent-color);

@@ -1,7 +1,6 @@
 /* Логотип */
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  @include section(24px, 24px);
 }
 
 .logo--color-light {

@@ -8,8 +8,7 @@
   border-style: none;
   cursor: pointer;
 
-  transition: background-color $effect, color $effect, box-shadow $effect;
-
+  @include transition(background-color, color, box-shadow);
   &:hover,
   &:focus {
     color: var(--button-text-color);
