@@ -79,10 +79,8 @@
   /* 101% - потому-что при зуме окна в 125% видны синие линии */
   @include transition(transform, null, null);
 
-  .card-set__card:hover & {
-    transform: translateY(0);
-  }
-  .card-set__.link:focus & {
+  .card-set__card:hover &,
+  .card-set__link:focus & {
     transform: translateY(0);
   }
 }
